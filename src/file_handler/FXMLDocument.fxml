@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="file_handler_id" prefHeight="450.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="file_handler.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" prefHeight="100.0" prefWidth="680.0" style="-fx-background-color: #33ccff;" text="File Handler" textFill="WHITE">
+         <font>
+            <Font size="53.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <JFXButton fx:id="fileClassifierBtn" buttonType="RAISED" layoutX="66.0" layoutY="161.0" onAction="#fileClassifierBtnAction" prefHeight="192.0" prefWidth="235.0" ripplerFill="#eeeeee" style="-fx-border-color: #8cff66; -fx-border-radius: 20;" text="File Classifier" textAlignment="CENTER" textFill="#09bc62" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="fileEncryptionBtn" buttonType="RAISED" layoutX="365.0" layoutY="161.0" onAction="#fileEncryptionBtnAction" prefHeight="192.0" prefWidth="235.0" ripplerFill="#eeeeee" style="-fx-border-color: #ffff66; -fx-border-radius: 20;" text="File Encryption" textAlignment="CENTER" textFill="#f2dd00" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

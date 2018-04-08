@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="file_encryption_id" prefHeight="450.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="file_handler.File_EncryptionController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="-2.0" prefHeight="100.0" prefWidth="688.0" style="-fx-background-color: #f2dd00;" text="File Encryption" textFill="#fcfcfc">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+      <HBox layoutX="132.0" layoutY="194.0">
+         <children>
+            <JFXTextField fx:id="filePathTf" editable="false" prefHeight="49.0" prefWidth="364.0" style="-fx-border-color: #ccffee;">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="fileBrowseBtn" onAction="#fileBrowseBtn" prefHeight="47.0" prefWidth="57.0" style="-fx-border-color: #0000ff;" text="...">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect></JFXButton>
+         </children>
+      </HBox>
+      <JFXButton fx:id="encryptBtn" layoutX="156.0" layoutY="333.0" onAction="#encryptBtnAction" prefHeight="63.0" prefWidth="138.0" style="-fx-border-color: #66ff66; -fx-border-radius: 15;" text="Encrypt" textFill="#06a122">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="decryptBtn" layoutX="386.0" layoutY="333.0" onAction="#decryptBtnAction" prefHeight="63.0" prefWidth="138.0" style="-fx-border-color: #66ff66; -fx-border-radius: 15;" text="Decrypt" textFill="#06a122">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Label fx:id="errorlbl" layoutX="132.0" layoutY="246.0" prefHeight="41.0" prefWidth="364.0" textFill="#f21d1d">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
